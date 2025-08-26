@@ -22,19 +22,20 @@ tl.from('.cube',{
     right:'-50%',
 },'<')
 
-let tl2 = gsap.timeline({
+let breadTl = gsap.timeline({
     scrollTrigger:{
         trigger:'#bread',
         start:'top 70%',
         // markers:true
     }
-})
+});
 
-tl2.from('#bread > .headings',{
+breadTl.from('#bread > .headings',{
     scale:0,
     // right:'-100%'
 
 })
-tl2.from ('.board',{
-    scale:0
-})
+breadTl.from ('#bread > .board',{
+    opacity:0,
+
+},'<')
