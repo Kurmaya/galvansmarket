@@ -39,3 +39,29 @@ breadTl.from ('#bread > .board',{
     opacity:0,
 
 },'<')
+breadTl.from('.sour',{
+    left:'150%',
+},'<')
+breadTl.from('.sour-2',{
+    left:'150%',
+},'-=0.2')
+breadTl.from('.sour-3',{
+    left:'150%',
+},'<')
+const reasons = document.querySelectorAll('.reason i');
+ let tl2 = gsap.timeline({
+    scrollTrigger:{
+        trigger:'#why',
+        start:'top 70%',
+    //    markers:true 
+
+
+    }
+ });
+tl2.from('#why .left',{
+    rotationY:180,
+})
+tl2.from('#why .right',{
+    x:'1000%'
+})
+
