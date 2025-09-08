@@ -18,9 +18,9 @@ tl.from(meat,{
     rotationZ:150,
     stagger:.3,
 },'<')
-tl.from('.cube',{
-    right:'-50%',
-},'<')
+// tl.from('.cube',{
+//     right:'-50%',
+// },'<')
 
 let breadTl = gsap.timeline({
     scrollTrigger:{
@@ -65,3 +65,15 @@ tl2.from('#why .right',{
     x:'1000%'
 })
 
+const menu = document.querySelector('.menu');
+const sour = document.querySelector('.sour-2');
+
+
+function openMenu(){
+    document.querySelector('.view-menu').classList.add('active');
+}   
+sour.addEventListener('click',openMenu);
+menu.addEventListener('click',openMenu);
+document.querySelector('.unview').addEventListener('click',()=>{
+    document.querySelector('.view-menu').classList.remove('active');
+});
