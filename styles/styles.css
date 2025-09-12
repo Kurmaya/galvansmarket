@@ -360,6 +360,8 @@ section .headings{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 1px solid var(--navbg);
+    border-radius: 10px;
 }
 .sour-2,.sour-3{
    position: absolute;
