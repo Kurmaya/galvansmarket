@@ -57,6 +57,27 @@ nav{
     /* gap:10px; */
     padding:.5rem 0;
 }
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--navbg); 
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap:10px;
+  text-align: left;
+}
 .store-details{
     display: flex;
     gap:20px;   
@@ -228,6 +249,7 @@ section .headings{
 }
 .headings h2{
     font-size: 3rem;
+    margin-top:20px;
 }
 .right{
     position: relative;
@@ -826,14 +848,16 @@ form button{
     color:var(--text);
     font-size: 5rem;
 }
-#beef .meat img ,#chicken .meat img,#fish .meat img,#pork .meat img{
+#beef .meat img ,#chicken .meat img,#fish .meat img,#pork .meat img,#seasonal .meat img,#classic .meat img,#monthly-special .meat img,#bag .meat img{
     /* background: url('../assets/hero_bg'),var(--navbg); */
     position: absolute;
     top:0;
     width: 100%;
     border-radius: 10px;
+    object-fit: cover;
+
 }
-#beef .wrapper ,#chicken .wrapper,#fish .wrapper,#pork .wrapper{
+#beef .wrapper ,#chicken .wrapper,#fish .wrapper,#pork .wrapper,#classic .wrapper ,#monthly-special .wrapper{
     padding:1rem 0;
 }
 #beef .headings ,#chicken .headings,#fish .headings,#pork .headings{
@@ -849,6 +873,23 @@ form button{
     justify-content: flex-end;
     align-items: flex-end;
     gap: 20px;
+}
+.order{
+    display: flex;
+    gap:20px;
+    justify-content: flex-start;
+    align-items: center;
+        width: 80%;
+    margin: auto;
+}
+.order img{
+    width: 150px;
+}
+#monthly-special h4{
+    padding:25px 0;
+    font-size:2rem;
+    width: 55%;
+    text-align: center;
 }
 @keyframes float {
     0%{
