@@ -59,6 +59,7 @@ nav{
 }
 .dropdown {
   position: relative;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -67,16 +68,24 @@ nav{
   background-color: var(--navbg); 
   min-width: 130px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
+  /* padding: 12px 16px; */
 }
 
 .dropdown:hover .dropdown-content {
   display: flex;
   flex-direction: column;
+  text-align: left;
   justify-content: flex-start;
   align-items: flex-start;
-  gap:10px;
-  text-align: left;
+  font-size: .85rem;
+}
+.dropdown-content a{
+    width: 100%;
+    padding:.4rem .2rem;
+    transition: .3s ease;
+}
+.dropdown-content a:hover{
+    background: var(--red);
 }
 .store-details{
     display: flex;
@@ -104,6 +113,7 @@ nav{
 }
 .navbar,.navlinks{
     display: flex;
+    width: 60%;
 }
 .navlinks{
     list-style: none;
@@ -111,6 +121,52 @@ nav{
 }
 .navlinks li{
     color: var(--text);
+}
+.side-area{
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    left:-20vw;
+    top:0;
+    z-index: 5;
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: column;
+    background: var(--navbg);
+    transition: .3s ease;
+
+}
+.nav-area{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.side-area ul li{
+    list-style-type:none;
+    margin:5px auto;
+    font-size: 1.2rem!important;
+}
+.side-area.active{
+    left:0;
+}
+.side-area img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    right: -40px;    
+    transition: .3s ease;
+    transition: .3s ease;
+}
+.side-area img.active{
+    transform: rotateY(180deg);
+    right:0;
 }
 section{
     width: 100%;
@@ -142,9 +198,39 @@ section{
     object-fit: contain;
 }
 
-#hero,#story{
+#hero{
     top:12vh;
     height: 100vh;
+}
+#story{
+    position: relative;
+    margin-top: 18vh;
+    min-height: 90vh;
+}
+#story .wrapper{
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    gap:30px;
+    width: 90%;
+}
+.row img{
+    height: 45vh;
+    object-fit: contain;
+    
+
+}
+.des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:20px;
+    width: 80%;
+    text-align: left;
+    align-self: flex-start;
+    font-size: 1.2rem;
 }
 #hero img{
     position: absolute;
@@ -172,17 +258,21 @@ section{
 #hero p{
     font-size: 1.5rem;
 }
-#hero button,.left button,.meat button,#bread button{
+#hero button,.left button,.meat button,#bread button,.need button{
     width: 130px;
     height: 45px;
     background: #A42125dd;
     color:var(--text);
     font-family: 'Pinkhoff',sans-serif;
-    font-size: .7rem;
+    font-size: .8rem;
     margin-top:.5rem;
     border: 0;
     border-radius: 5px;
     /* padding:.5rem; */
+}
+.need{
+    position: relative;
+    margin-left:8%;
 }
 .cube{
     position: absolute;
