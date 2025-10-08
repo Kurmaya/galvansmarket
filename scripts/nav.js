@@ -7,3 +7,5 @@ closeBtn.addEventListener('click',()=>{
   closeBtn.classList.toggle('active');
   document.querySelector('.store-details').classList.toggle('active');  
 })
+
+document.querySelector('.ear').textContent= new Date().getFullYear();

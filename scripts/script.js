@@ -1,4 +1,4 @@
-document.querySelector('.ear').textContent= new Date().getFullYear();
+
 const meat = document.querySelectorAll('.meat');
 
 gsap.registerPlugin(ScrollTrigger);
