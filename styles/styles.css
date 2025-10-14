@@ -923,6 +923,9 @@ textarea{
     height: 150px;
     resize: none;
 }
+button{
+    cursor: pointer;
+}
 form button{
     width: 150px;
     align-self: flex-start;
