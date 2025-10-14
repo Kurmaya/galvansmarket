@@ -479,6 +479,9 @@ section .headings{
     left:8vw;
     position: relative;
 }
+.page section{
+    width: 87%;
+}
 .sandwich{
     display: flex;
     flex-direction: column;
@@ -548,11 +551,12 @@ left:0;
 
 footer{
     background: var(--navbg);
-    width: 100%;
+    width: 105%;
     font-family:'Opens sans', sans-serif;
     padding:1rem;
     position: relative;
     z-index: 7;
+    left:-1%;
 }
 .left-wrap{
     display: flex;
@@ -933,7 +937,7 @@ form button{
 /* meats page */
 
 #meat-hero{
-    width: 100%;
+    width: 105%;
    min-height: 70vh!important;
     position: relative;
     /* margin-top:10vh; */
@@ -1224,4 +1228,11 @@ section .headings{
     /* width: auto!important; */
     border-top:1px solid white!important;
 }
+.page.active .warpper{
+left:15vw;
+}
+.page .headings h2{
+    font-size:1.5rem;
+}
+
 }
