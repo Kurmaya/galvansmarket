@@ -223,8 +223,12 @@ section{
 .row img{
     height: 45vh;
     object-fit: contain;
-    
-
+}
+.row:nth-of-type(1) img{
+margin-top:60px;
+}
+.row:nth-of-type(2) img{
+padding-top:3.5rem;
 }
 .des{
     display: flex;
@@ -237,6 +241,31 @@ section{
     align-self: flex-start;
     font-size: 1.2rem;
 }
+.des p{
+    width: 100%;
+    font-size: 1rem;
+    
+}
+.mary {
+    width: 250px;
+position: relative;
+margin:-110px 0 -60px auto;
+
+    /* background: white; */
+}
+/* .mary::before{
+    position: absolute;
+    width: 120%;
+    height: 150%;
+    content: '';
+    padding:1rem;
+    background: #A42125;
+    z-index: -1;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 80px 80px 10px 10px ;
+} */
 #hero img{
     position: absolute;
     width: 100%;
@@ -276,8 +305,8 @@ section{
     /* padding:.5rem; */
 }
 .need{
-    position: relative;
-    margin-left:8%;
+    display: grid;
+    place-items: center;
 }
 .cube{
     position: absolute;
@@ -471,7 +500,7 @@ section .headings{
 .sandwich-holder,.meat-holder{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-top: 100px;
+    margin-top: 60px;
     gap:20px;
     width: 85%;
 }
@@ -1029,7 +1058,23 @@ background-attachment: fixed;
     background: white;
     transition: .3s ease;
 }
-
+.special{
+    position: relative;
+    z-index: 2;
+}
+.special::before{
+    position: absolute;
+    width: 120%;
+    height: 150%;
+    padding: 1rem;
+    content: '';
+    background:#A42125;
+    border-radius: 80px 80px 10px 10px;
+    z-index: -1 ;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
 @keyframes float {
     0%{
         transform: translateY(10px);
@@ -1039,6 +1084,11 @@ background-attachment: fixed;
     }
 }
 @media screen and (min-width:280px) and (max-width: 600px){
+    .mary{
+        margin:20px auto -30px auto;
+        width: 200px;
+        text-align: center;
+    }
     .headings h2{
         font-size: 2rem;
     }
