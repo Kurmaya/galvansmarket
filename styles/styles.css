@@ -971,6 +971,11 @@ form button{
     max-height: 200px;
 
 }
+#beef .bg img ,#chicken .bg img,#fish .bg img, #seasonal .bg img, #bag .bg img, #pork .bg img{
+object-fit: cover;
+background-attachment: fixed;
+
+}
 #beef .wrapper ,#chicken .wrapper,#fish .wrapper,#pork .wrapper,#classic .wrapper ,#monthly-special .wrapper{
     padding:1rem 0;
     flex-direction: column;
