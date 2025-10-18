@@ -126,7 +126,7 @@ nav{
     color: var(--text);
 }
 .side-area{
-    width: 15vw;
+    width: auto;
     height: 100%;
     position: fixed;
     /* left:-20vw; */
@@ -141,7 +141,7 @@ nav{
 }
 
 .nav-area{
-    width: 100%;
+    width: 15vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1253,6 +1253,9 @@ footer .socials{
 .meat-holder{
     grid-template-columns: 1fr;
 }
+.nav-area{
+    width: auto;
+}
 .nav-area ul{
     /* display: grid;
     width: 100%;
@@ -1261,16 +1264,17 @@ footer .socials{
             display: grid;
         width: 100%;
         gap: 15px;
-        height: 75vh;
+        height: 100%;
         position: relative;
         top:95px;
 }
 .nav-area li{
-        transform: rotateZ(270deg);
+        /* transform: rotateZ(270deg); */
 }
 .side-area ul li{
-        margin: 10px -10px auto;
-        font-size: .9rem!important;
+        /* margin: 10px -10px auto; */
+        font-size: .8rem!important;
+        padding:1rem 0.5rem;    
 }
 #monthly-special h4{
     font-size: 1.5rem;
