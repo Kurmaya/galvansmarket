@@ -988,7 +988,7 @@ form button{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.7);
+    /* filter: brightness(0.7); */
 }
 #meat-hero h1{
     position: absolute;
@@ -1169,7 +1169,20 @@ background-attachment: fixed;
 #new-wild .special,#new-classic .special{
     width: max-content;
 }
-
+.cta{
+    position: fixed;
+    bottom:5%;
+    right:0.5%;
+    background: var(--red);
+    padding:1rem;
+    border-radius: 20px;
+    z-index: 4;
+    font-size: .8rem;
+}
+.retail{
+    position: relative;
+    left:15%;
+}
 @keyframes float {
     0%{
         transform: translateY(10px);
@@ -1179,9 +1192,19 @@ background-attachment: fixed;
     }
 }
 @media screen and (min-width:280px) and (max-width: 600px){
+    .meat-prods{
+        flex-direction: column;
+    }
+    .menu-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }   
+    #new-fish .inner-wrap, #new-pork .inner-wrap, #new-chicken .inner-wrap, #new-seasonal .inner-wrap, #new-bag .inner-wrap, #new-wild .inner-wrap, #new-classic .inner-wrap {
+        left:0;
+    }
     .mary{
-        margin:20px auto -30px auto;
-        width: 200px;
+        /* margin:20px auto -30px auto; */
+        width: 120px;
         text-align: center;
     }
     .headings h2{
@@ -1375,6 +1398,12 @@ footer .socials{
     font-size: 1.5rem;
     width: 60%;
 }
+#meat-hero{
+    margin-top: 16vh;
+}
+.retail{
+    font-size: 1.2rem;
+}
 #meat-hero h1{
     font-size: 2.5rem;
     width: 100%;
@@ -1392,7 +1421,9 @@ section .headings{
 left:15vw;
 }
 .page .headings h2{
-    font-size:1.5rem;
+    font-size:1.1rem;
 }
-
+.special{
+    font-size: .95rem;
+}
 }
