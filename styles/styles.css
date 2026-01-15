@@ -31,20 +31,22 @@ p{
     font-family: 'Open sans',sans-serif;
 }
 .logo{
-    width: 180px;
-    height: 80px;
+    width: 130px;
+    height: 100px;
     position: relative;
+    top:-10px;
 }
 .g-txt{
     z-index: 2;
     top:-10px;
     height: 30px!important;
+    display: none;
 }
 .logo img{
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 nav{
@@ -130,7 +132,7 @@ nav{
     height: 100%;
     position: fixed;
     /* left:-20vw; */
-    top:70vh;
+    top:93vh;
     z-index: 5;
     /* border:2px solid red; */
     display: flex;
@@ -247,11 +249,10 @@ padding-top:3.5rem;
     
 }
 .mary {
-    width: 250px;
-position: relative;
-margin:-110px 0 -60px auto;
-
-    /* background: white; */
+    width: 230px;
+position: absolute;
+top:1%;
+right:5%;
 }
 /* .mary::before{
     position: absolute;
@@ -342,11 +343,12 @@ section .headings{
    left:8%;
    /* display: flex; */
    /* width: 75%; */
-   margin: auto auto auto 0;
+   margin: 30px auto 30px 0;
    text-align: left;
 }
 .wrapper{
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     position: relative;
@@ -354,6 +356,13 @@ section .headings{
     width: 90%;
     margin: auto;
     gap:20px;
+}
+#meats .wrapper{
+    flex-direction: column;
+}
+.meat-prods{
+    display: flex;
+    /* flex-direction: column; */
 }
 #about .wrapper{
     top:20px;
@@ -970,9 +979,9 @@ form button{
 
 #meat-hero{
     width: 105%;
-   min-height: 70vh!important;
+   min-height: 80vh!important;
     position: relative;
-    /* margin-top:10vh; */
+    margin-top:20vh;
 }
 #meat-hero img{
     position: absolute;
@@ -1030,6 +1039,7 @@ background-attachment: fixed;
     align-items: center;
         width: 80%;
     margin: auto;
+    position: relative;
 }
 .order img{
     width: 150px;
@@ -1075,6 +1085,91 @@ background-attachment: fixed;
     left:50%;
     transform: translate(-50%,-50%);
 }
+  .swiper {
+      width: 100%;
+      height: 100%;
+      margin:1rem auto;
+    }
+.swiper-button-next, .swiper-button-prev {
+      color:white!important;
+    filter:drop-shadow(-2px 5px .1rem black)
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* width: 100%!important; */
+      height: 400px!important;
+      position: relative;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%!important;
+      height: 100%!important;
+      object-fit: cover;
+      object-position: center 35%;
+      /* position: absolute; */
+      border-radius: 10px;
+      
+    }
+    #meat-hero .swiper {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+      }
+    #meat-hero .swiper-slide{
+        /* width: 100%!important; */
+        /* height: 80vh!important; */
+        
+    }
+    #meat-hero .swiper-slide img{
+        /* height: 90%!important; */
+        /* width: 55%!important; */
+        object-position: center 45%;
+        object-fit: cover;
+    }
+.item {
+    width: 100%;
+    font-family: 'Open sans',sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.item ul{
+    margin:30px auto;
+}
+#new-beef,#new-chicken,#new-fish,#new-pork{
+    /* width: 100%; */
+  justify-content: center;
+  align-items: center;
+}
+#new-beef .special, #new-chicken .special, #new-fish .special, #new-pork .special,#new-classic .special{
+    /* margin-left:15%; */
+    /* margin-top: 10px; */
+}
+.menu-wrapper{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.inner-wrap{
+    position: relative;
+}
+#new-fish .inner-wrap,#new-pork .inner-wrap,#new-chicken .inner-wrap,#new-seasonal .inner-wrap,#new-bag .inner-wrap,#new-wild .inner-wrap,#new-classic .inner-wrap {
+    left:-28%;
+}
+#new-wild .special,#new-classic .special{
+    width: max-content;
+}
+
 @keyframes float {
     0%{
         transform: translateY(10px);

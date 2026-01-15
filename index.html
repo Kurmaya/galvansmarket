@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <script src="./scripts/nav.js" defer></script>
 </head>
@@ -25,13 +26,13 @@
             </div>
             <div class="store-right">
 
-                <p>MON-FRI: 10:00am-6:00pm <br> SAT: 11AM-6PM <br> SUN: 11AM-3PM</p> 
+                <p>TUE-SAT: 10:00am-6:00pm <br> SUN/MON: Closed</p> 
                 
             </div>
 
         </div>
         <div class="logo">
-                <a href="" ><img class="g-txt" src="./assets/galvan-text.png" alt=""></a>
+                <!-- <a href="" ><img class="g-txt" src="./assets/galvan-text.png" alt=""></a> -->
                 <a href="./index.html"><img src="./assets/logo-raw.JPG" alt=""></a>
             </div>
         <div class="navbar">
@@ -47,7 +48,7 @@
            <a href="./breadboard.html">
                     <li>Bread Board</li>
                 </a>
-                <a href="">
+                <a href="https://galvans-market.printify.me/" target="_blank">
                     <li>MERCH</li>
                 </a>
                 <a href="./index.html#contact">
@@ -58,7 +59,7 @@
         <div class="socials">
 <a href=""><img src="./assets/icons/facebook.png" alt=""></a>
 <a href=""><img src="./assets/icons/twitter.png" alt=""></a>
-<a href=""><img src="./assets/icons/instagram.png" alt=""></a>
+<a href="https://www.instagram.com/galvansmarket/?hl=en" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
         </div>
        
     </nav>
@@ -71,6 +72,7 @@
 </div>
     </section>
      <section id="meats">
+   
         <!-- <img class="cube" src="./assets/cube.webp" alt=""> -->
         <div class="bg">
             <img src="./assets/hero_bg" alt="">
@@ -79,7 +81,22 @@
             <h2>LAND & SEA</h2>
         </div>
         <div class="wrapper">
-            <div class="meat">
+                  <!-- <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="./assets/meat images/Galvan/Galvan/currentphotos/cross rib.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/meat images/Galvan/Galvan/currentphotos/Wagyu beef.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/meat images/Galvan/Galvan/currentphotos/Flat iron.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/meat images/Galvan/Galvan/currentphotos/dry aged beef.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/meat images/Galvan/Galvan/currentphotos/Sirloin Steak.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/meat images/Galvan/Galvan/currentphotos/Tomahawk Steak.jpeg" alt=""></div>
+      
+     
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div> -->
+  <div class="meat-prods">
+<div class="meat">
                 <img src="./assets/beef.png" alt="">
                 
                 <a href="./meats.html#beef"><button>VIEW MORE</button></a>
@@ -100,6 +117,8 @@
                 
                 <a href="./meats.html#pork"><button>VIEW MORE</button></a>
             </div>
+  </div>
+            
         </div>
     </section>
       <section id="bread">
@@ -114,61 +133,7 @@
   
  
    </section>
-    <!-- <section id="about">
-
-<div class="wrapper">
-    <div class="left">
-        <div class="headings">
-    <h2>See The Difference</h2>
-</div>
-         
- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis reiciendis tenetur, ullam excepturi dolorum maiores facere voluptas optio molestiae labore.</p>
- <div class="reasons">
     
-    <div class="reason">
-        <div class="color"></div>
-        <i class="fa-solid fa-shield-heart"></i>
-        <h4>Artisanal Items</h4>
-    </div>
-    <div class="reason">
-        <div class="color"></div>
-        <i class="fa-solid fa-drumstick-bite"></i>
-        <h4>Local Sourcing</h4>
-    </div>
-    <div class="reason">
-        <div class="color"></div>
-        <i class="fa-solid fa-bacon"></i>
-        <h4>In-store Perks</h4>
-    </div>
-    <div class="reason">
-        <div class="color"></div>
-        <i class="fa-solid fa-bacon"></i>
-        <h4>In-store Perks</h4>
-    </div>
-   
-</div>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sequi velit consequuntur ipsam consequatur officia.
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit corrupti culpa cum excepturi repellat, saepe fuga provident omnis amet labore!</p>
- <button>Read More</button>
-
-    </div>
-
-    <div class="right">
-        <img src="./assets/about.webp" alt="">
-        <img src="./assets/about-3-2.webp" alt="" class="over">
-        <div class="exp">
-            <div class="exp-left">
-
-                <h2>60+ </h2>
-            </div>
-            <div class="exp-right">
-
-                <h3>YEARS OF <br> EXPERIENCE</h3>
-            </div>
-        </div>
-    </div>
-</div>
-    </section> -->
  <section id="stuff">
     <div class="headings">
             <h2>The Good Stuff</h2>
@@ -198,10 +163,10 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit corrupti
                 </a>
             </div>
             <div class="stuff">
-                <a href="">
+                <a href="https://galvans-market.printify.me/" target="_blank">
 
                         <img src="./assets/merch.JPG" alt="">
-                        <h3>Mechandise</h3>
+                        <h3>Merchandise</h3>
                 </a>
             </div>
         </div>
@@ -248,24 +213,24 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit corrupti
             <textarea name="message" id="" placeholder="Write your message"></textarea>
             <button>Submit</button>
         </form>
-        <img src="./assets/beef-hero.jpg" alt="">
+        <img src="./assets/meat images/Galvan/Galvan/currentphotos/Sirloin Steak.jpeg" alt="">
      </div>
         
     </div>
  </section>
- <footer>
+   <footer>
         <hr>
         
         <div class="wrapper">
 <div class="left-wrap">
 <div class="logo">
-                <a href="" ><img class="g-txt" src="./assets/galvan-text.png" alt=""></a>
+                <!-- <a href="" ><img class="g-txt" src="./assets/galvan-text.png" alt=""></a> -->
                 <a href="./index.html"><img src="./assets/logo-raw.JPG" alt=""></a>
             </div>
         <div class="socials">
 <a href=""><img src="./assets/icons/facebook.png" alt=""></a>
 <a href=""><img src="./assets/icons/twitter.png" alt=""></a>
-<a href=""><img src="./assets/icons/instagram.png" alt=""></a>
+<a href="https://www.instagram.com/galvansmarket/?hl=en" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
         </div>
         </div>
           <div class="right-wrap">
@@ -273,7 +238,7 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit corrupti
             <a href="./story.html">Our Story</a>
             <a href="./meats.html">Meat</a>
             <a href="./breadboard.html">Bread Board</a>
-            <a href="">Merch</a>
+            <a href="https://galvans-market.printify.me/" target="_blank">Merch</a>
             <a href="./index.html#contact">Contact Us</a>
             </div>
 
@@ -283,9 +248,9 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit corrupti
                 <li><i class="fa-solid fa-phone"></i><span> +1234567890</span></li>
                 <li><i class="fa-solid fa-at"></i> <span>example@email.com</span></li>
                 <li><i class="fa-solid fa-location-dot"></i> <span>1275 Macarthur Boulevard, <br>San Leandro, California</span></li>
-                <li><i class="fa-solid fa-clock"> </i> <span>MON-FRI : 10AM-6PM <br>
-                SAT: 11AM-6PM <br>
-                SUN: 11AM-3PM</span>
+                <li><i class="fa-solid fa-clock"> </i> <span>TUE-SAT : 10AM-6PM <br>
+                SUN/MON: Closed <br>
+                </span>
                 </li>
             </ul>
         </div>
@@ -305,6 +270,37 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit corrupti
       
       
     </footer>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+    
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+  
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+  
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
+    });
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>

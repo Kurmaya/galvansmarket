@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galvan's Market - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <script src="./scripts/nav.js" defer></script>
 </head>
 <body style="background: url('./assets/hero_bg');">
-  <nav>
+   <nav>
         <div class="close">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -25,13 +26,13 @@
             </div>
             <div class="store-right">
 
-                <p>MON-FRI: 10:00am-6:00pm <br> SAT: 11AM-6PM <br> SUN: 11AM-3PM</p> 
+                <p>TUE-SAT: 10:00am-6:00pm <br> SUN/MON: Closed</p> 
                 
             </div>
 
         </div>
         <div class="logo">
-                <a href="" ><img class="g-txt" src="./assets/galvan-text.png" alt=""></a>
+                <!-- <a href="" ><img class="g-txt" src="./assets/galvan-text.png" alt=""></a> -->
                 <a href="./index.html"><img src="./assets/logo-raw.JPG" alt=""></a>
             </div>
         <div class="navbar">
@@ -47,7 +48,7 @@
            <a href="./breadboard.html">
                     <li>Bread Board</li>
                 </a>
-                <a href="">
+                <a href="https://galvans-market.printify.me/" target="_blank">
                     <li>MERCH</li>
                 </a>
                 <a href="./index.html#contact">
@@ -58,7 +59,7 @@
         <div class="socials">
 <a href=""><img src="./assets/icons/facebook.png" alt=""></a>
 <a href=""><img src="./assets/icons/twitter.png" alt=""></a>
-<a href=""><img src="./assets/icons/instagram.png" alt=""></a>
+<a href="https://www.instagram.com/galvansmarket/?hl=en" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
         </div>
        
     </nav>
@@ -67,24 +68,93 @@
         <img src="./assets/icons/right-arrow.png" alt="">
             <div class="nav-area">
             <ul>
-                <li><a href="#beef">Beef</a></li>
-                <li><a href="#chicken">Chicken</a></li>
-                <li><a href="#pork">Pork</a></li>
-                <li><a href="#fish">Seafood</a></li>
-                <li><a href="#seasonal">Seasonal</a></li>
-                <li><a href="#bag">Grab Bag</a></li>
+                <li><a href="#new-beef">Beef</a></li>
+                <li><a href="#new-chicken">Chicken</a></li>
+                <li><a href="#new-pork">Pork</a></li>
+                <li><a href="#new-fish">Seafood</a></li>
+                <li><a href="#new-seasonal">Seasonal</a></li>
+                <li><a href="#new-wild">Wild Game </a></li>
+                <li><a href="#new-bag">Grab Bag</a></li>
             </ul>
         </div>
     </div>
     
 <section id="meat-hero">
-    <img src="./assets/beef-hero.jpg" alt="">
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="./assets/meat images/Galvan/Galvan/currentphotos/cross rib.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/meat images/Galvan/Galvan/currentphotos/Wagyu beef.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/meat images/Galvan/Galvan/currentphotos/Flat iron.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/meat images/Galvan/Galvan/currentphotos/dry aged beef.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/meat images/Galvan/Galvan/currentphotos/Sirloin Steak.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/meat images/Galvan/Galvan/currentphotos/Tomahawk Steak.jpeg" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+    <!-- <img src="./assets/beef-hero.jpg" alt=""> -->
     
-        <h1>Meat</h1>
+        <!-- <h1>Meat</h1> -->
     
 </section>
 <div class="page">
-<section id="beef" class="small">
+    <section id="new-beef" >
+         <div class="headings">
+        <h2>Beef</h2>
+        
+    </div>
+        <div class="menu-wrapper">
+            <div class="inner-wrap">
+<h2 class="special">Beef </h2>
+            <div class="menu-holder">
+<div class="item">
+    <ul>
+<li>Chuck Roast</li>
+    <li>Tri Tip</li>
+    <li>Cross Rib Roast</li>
+    <li>Flat Iron</li>
+    <li>Beef Shoulder Clod</li>
+    <li>Short Ribs</li>
+    <li>Beef Marrow Bones</li>
+    <li>Beef Back Ribs</li>
+    <li>Beef Marrow Bones</li>
+    <li>Whole Packard Briskets</li>
+    <li>Eye of Round Roast</li>
+    <li>Sirloin Tip</li>
+    <li>Top Sirloin</li>
+    </ul>
+    
+</div>
+            </div>
+            
+            </div>
+            <div class="inner-wrap">
+                <h3 class="special">Beef Specialty Items</h3>
+ <div class="menu-holder">
+<div class="item">
+    <ul>
+<li>Dry Aged Beef</li>
+    <li>Prime Steak</li>
+    <li>Tomahawk Steaks</li>
+    <li>Cowboy Steaks</li>
+    <li>Bone in Rib Eye</li>
+    <li>Picahna</li>
+    <li>New York Steaks</li>
+    <li>Shell Steaks</li>
+    <li>Porterhouse Steaks</li>
+    <li>Marinated Tri Tips</li>
+    <li>Marinated Steaks</li>
+    <li>Filet Mignon Roasts</li>
+    
+    </ul>
+    
+</div>
+            </div>
+            </div>
+        </div>
+    </section>
+<!-- <section id="beef" class="small">
     <div class="bg">
 
             <img src="./assets/hero_bg" alt="">
@@ -95,62 +165,62 @@
     </div>
     <div class="wrapper">
        <div class="meat-holder">
-        <!-- chuck -->
+        
          <div class="meat">
                 <img src="./assets/flesh-beef.jpg" alt="">
                 <div class="desc">
 <h3>Chuck Roast</h3>
-                <!-- <span>$100</span> -->
+                
                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 
             </div>
-        <!-- tri -->
+        
         <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Tri Tip.jpeg" alt="">
                 <div class="desc">
 <h3>Tri Tip</h3>
-                <!-- <span>$100</span> -->
+                
                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 
             </div>
-<!-- cross rib -->
+
     <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/cross rib.jpeg" alt="">
                 <div class="desc">
 <h3>Cross Rib Roast</h3>
-                <!-- <span>$100</span> -->
+
                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 
             </div>
-          <!-- flat  -->
+
             <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Flat iron.jpeg" alt="">
                 <div class="desc">
 <h3>Flat Iron</h3>
                  <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+
                 </div>
               
             </div>
-            <!-- shoulder  -->
+
                <div class="meat">
                 <img src="./assets/flesh-beef.jpg" alt="">
                 <div class="desc">
 <h3>Beef Shoulder Clod</h3>
-                <!-- <span>$100</span> -->
+
                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 
             </div>
-            <!-- short ribs  -->
+
                  <div class="meat">
                 <img src="./assets/flesh-beef.jpg" alt="">
                 <div class="desc">
 <h3>Short Ribs </h3>
-                <!-- <span>$100</span> -->
+
                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 
@@ -160,70 +230,70 @@
                 <div class="desc">
 <h3>Beef Marrow Bones</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+
                 </div>
                 
             </div>
            
-         <!-- back ribs  -->
+
             <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Beef back ribs.jpeg" alt="">
                 <div class="desc">
 <h3>Beef Back Ribs</h3>
-                <!-- <span>$100</span> -->
+
                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 
             </div>
 
-        <!-- Marrow  -->
+
           <div class="meat">
                 <img src="./assets/flesh-beef.jpg" alt="">
                 <div class="desc">
 <h3>Beef Marrow Bones</h3>
-                <!-- <span>$100</span> -->
+                
                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 
             </div>
 
-            <!-- Briskets  -->
+
               <div class="meat">
                 <img src="./assets/flesh-beef.jpg" alt="">
                 <div class="desc">
 <h3>Whole Packard Briskets</h3>
-                <!-- <span>$100</span> -->
-                 <p>Lorem ipsum dolor sit amet.</p>
-                </div>
                 
-            </div>
-            <!-- Eye of ROund  -->
-              <div class="meat">
-                <img src="./assets/flesh-beef.jpg" alt="">
-                <div class="desc">
-<h3>Eye of Round Roast</h3>
-                <!-- <span>$100</span> -->
-                 <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                
-            </div>
-            <!-- Sirloin -->
-              <div class="meat">
-                <img src="./assets/meat images/Galvan/Galvan/currentphotos/Sirloin Steak.jpeg" alt="">
-                <div class="desc">
-<h3>Sirloin Tip</h3>
-                <!-- <span>$100</span> -->
                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 
             </div>
 
-    <!-- Top Sirloin  -->
+              <div class="meat">
+                <img src="./assets/flesh-beef.jpg" alt="">
+                <div class="desc">
+<h3>Eye of Round Roast</h3>
+                
+                 <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+
+              <div class="meat">
+                <img src="./assets/meat images/Galvan/Galvan/currentphotos/Sirloin Steak.jpeg" alt="">
+                <div class="desc">
+<h3>Sirloin Tip</h3>
+
+                 <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+
+
       <div class="meat">
                 <img src="./assets/flesh-beef.jpg" alt="">
                 <div class="desc">
 <h3>Top Sirloin</h3>
-                <!-- <span>$100</span> -->
+
                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 
@@ -235,138 +305,169 @@
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/dry aged beef.jpeg" alt="">
                 <div class="desc">
 <h3>Dry Aged Beef</h3>
-                <!-- <span>$100</span> -->
+                
                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 
             </div>
-            <!-- Prime Steak  -->
+           
                <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Prime Steak.jpeg" alt="">
                 <div class="desc">
 <h3>Prime Steak</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+           
                 </div>
                 
             </div>
-            <!-- Tomahawk  -->
+           
                <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Tomahawk Steak.jpeg" alt="">
                 <div class="desc">
 <h3>Tomahawk Steaks</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+           
                 </div>
                 
             </div>
 
-            <!-- Cowboy  -->
+           
               <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Wagyu beef.jpeg" alt="">
                 <div class="desc">
 <h3>Cowboy Steaks</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+                
                 </div>
                 
             </div>
-        <!-- Bone in eye  -->
+        
           <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/bone rib eye.jpeg" alt="">
                 <div class="desc">
 <h3>Bone in Rib Eye</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+        
                 </div>
                 
             </div>
 
-        <!-- Picanha  -->
+        
           <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Wagyu beef.jpeg" alt="">
                 <div class="desc">
 <h3>Picahna</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
-                </div>
-                
+        
+            </div>
+            
             </div>
 
-            <!-- New York  -->
+        
 
              <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Wagyu beef.jpeg" alt="">
                 <div class="desc">
 <h3>New York Steaks</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+        
                 </div>
                 
             </div>
 
-       <!-- Shell       -->
+       
          <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Wagyu beef.jpeg" alt="">
                 <div class="desc">
 <h3>Shell Steaks</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+       
                 </div>
                 
             </div>
 
-            <!-- porter  -->
+       
 
         <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Porterhouse Steaks.jpeg" alt="">
                 <div class="desc">
 <h3>Porterhouse Steaks</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+       
                 </div>
                 
             </div>     
 
-       <!-- Marinated Tri -->
+       
      <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Tri Tip.jpeg" alt="">
                 <div class="desc">
 <h3>Marinated Tri Tips</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+       
                 </div>
                 
             </div>
 
-            <!-- Mari Steak  -->
+       
 
       <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Wagyu beef.jpeg" alt="">
                 <div class="desc">
 <h3>Marinated Steaks</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+       
                 </div>
                 
             </div>       
 
-    <!-- fillet  -->
+    
 
      <div class="meat">
                 <img src="./assets/meat images/Galvan/Galvan/currentphotos/Wagyu beef.jpeg" alt="">
                 <div class="desc">
 <h3>Filet Mignon Roasts</h3>
 <p>Lorem ipsum dolor sit amet.</p>
-                <!-- <span>$100</span> -->
+                
                 </div>
                 
             </div>
        </div>
     </div>
-</section>
+</section> -->
 <!-- Poultry -->
-<section id="chicken" class="small">
+<section id="new-chicken" >
+    <img  class="mary" src="./assets/mary.png" alt="">
+         <div class="headings">
+        <h2>Poultry</h2>
+        
+    </div>
+        <div class="menu-wrapper">
+            <div class="inner-wrap">
+<h2 class="special">Poultry </h2>
+            <div class="menu-holder">
+<div class="item">
+    <ul>
+<li>Whole Chickens</li>
+    <li>Boneless chicken Breast</li>
+    <li>Boneless Chicken Thighs</li>
+    <li>Party Wings</li>
+    <li>Leg Quarters</li>
+    <li>Cornish Game Hens</li>
+    <li>Moscovy Ducks</li>
+    <li>Willie Bird Turkeys</li>
+    <li>Canadian Geese</li>
+    
+    </ul>
+    
+</div>
+            </div>
+            
+            </div>
+           
+        </div>
+    </section>
+<!-- <section id="chicken" class="small">
 
     <div class="bg">
 
@@ -378,7 +479,7 @@
     </div>
     <div class="wrapper">
         <img  class="mary" src="./assets/mary.png" alt="">
-        <!-- <h3 class="mary">Featuring Mary’s Organic Poultry</h3> -->
+        
         <div class="meat-holder">
             <div class="meat">
                 <img src="./assets/chicken-breast.jpg" alt="">
@@ -455,9 +556,82 @@
             
         </div>
     </div>
-</section>
+</section> -->
+<!-- pork -->
+ <section id="new-pork" >
+    
+         <div class="headings">
+        <h2>Pork</h2>
+        
+    </div>
+        <div class="menu-wrapper">
+            <div class="inner-wrap">
+<h2 class="special">Pork</h2>
+            <div class="menu-holder">
+<div class="item">
+    <ul>
+<li>Whole Pig</li>
+    <li>Suckling Pigs</li>
+    <li>Pork Loin</li>
+    <li>Pork Chops</li>
+    <li>Pork Belly</li>
+    <li>Pork Ribs</li>
+    <li>Pork Tenderloins</li>
+    <li>Pork Shoulder</li>
+
+    
+    </ul>
+    
+</div>
+            </div>
+            
+            </div>
+           
+        </div>
+    </section>
 <!-- Seafood  -->
-<section id="fish" class="small">
+ <section id="new-fish" >
+    
+         <div class="headings">
+        <h2>Fish/Sea Food</h2>
+        
+    </div>
+        <div class="menu-wrapper">
+            <div class="inner-wrap">
+<h2 class="special">Fish/Sea Food </h2>
+            <div class="menu-holder">
+<div class="item">
+    <ul>
+<li>Whole Chickens</li>
+    <li>Fresh Fish Daily</li>
+    <li>Whole Salmon</li>
+    <li>Local Cod</li>
+    <li>local Petrale Sole</li>
+    <li>Local Halibut</li>
+    <li>Black Cod</li>
+    <li>Dungeoness Crab</li>
+    <li>Blue Crab</li>
+    <li>Whole Live Lobster</li>
+    <li>Rock Lobster Tails</li>
+    <li>Jumbo Prawns</li>
+    <li>Gulf Shrimp</li>
+    <li>House made Gravlax</li>
+    <li>Smoked Salmon</li>
+    <li>Fresh Oysters</li>
+    <li>Mussels</li>
+    <li>Clams</li>
+    <li>Caviar</li>
+    </ul>
+    
+    
+</div>
+            </div>
+            
+            </div>
+           
+        </div>
+    </section>
+<!-- <section id="fish" class="small">
     <div class="bg">
 
             <img src="./assets/hero_bg" alt="">
@@ -615,9 +789,9 @@
 
         </div>
     </div>
-</section>
-<!-- pork -->
-<section id="pork" class="small">
+</section> -->
+
+<!-- <section id="pork" class="small">
       <div class="bg">
 
             <img src="./assets/hero_bg" alt="">
@@ -702,8 +876,36 @@
             </div>
         </div>
     </div>
-</section>
-<section id="seasonal" class="small">
+</section> -->
+<section id="new-seasonal" >
+    
+         <div class="headings">
+        <h2>Seasonal</h2>
+        
+    </div>
+        <div class="menu-wrapper">
+            <div class="inner-wrap">
+<h2 class="special">Seasonal </h2>
+            <div class="menu-holder">
+<div class="item">
+    <ul>
+<li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+
+    
+    </ul>
+    
+</div>
+            </div>
+            
+            </div>
+           
+        </div>
+    </section>
+<!-- <section id="seasonal" class="small">
       <div class="bg">
 
             <img src="./assets/hero_bg" alt="">
@@ -761,8 +963,39 @@
             </div>
         </div>
     </div>
-</section>
-<section id="bag" class="small">
+</section> -->
+<section id="new-bag" >
+    
+         <div class="headings">
+        <h2>CAN’T DECIDE? GET GALVAN’S GRAB BAG</h2>
+        
+    </div>
+        <div class="menu-wrapper">
+            <div class="inner-wrap">
+<h2 class="special">Galvan's Grab Bag</h2>
+            <div class="menu-holder">
+<div class="item">
+    <ul>
+<li>Whole Pig</li>
+    <li>Suckling Pigs</li>
+    <li>Pork Loin</li>
+    <li>Pork Chops</li>
+    <li>Pork Belly</li>
+    <li>Pork Ribs</li>
+    <li>Pork Tenderloins</li>
+    <li>Pork Shoulder</li>
+
+    
+    </ul>
+    
+</div>
+            </div>
+            
+            </div>
+           
+        </div>
+    </section>
+<!-- <section id="bag" class="small">
       <div class="bg">
 
             <img src="./assets/hero_bg" alt="">
@@ -812,7 +1045,96 @@
            
         </div>
     </div>
-</section>
+</section> -->
+<section id="new-wild" >
+    
+         <div class="headings">
+        <h2>Wild Game Processing</h2>
+        
+    </div>
+        <div class="menu-wrapper">
+            <div class="inner-wrap">
+<h2 class="special">Wild Game Processing</h2>
+            <div class="menu-holder">
+<div class="item">
+    <ul>
+<li>Wild Boar</li>
+    <li>Venison</li>
+    <li>Elk</li>
+    <li>Bear</li>
+    <li>Antelope</li>
+
+    
+    </ul>
+</div>
+</div>
+<h2 style="position:relative; margin:2rem auto;">“Retail Cuts and Custom sausages made”</h2>
+            
+            </div>
+           
+        </div>
+    </section>
+<!-- <section id="wild" class="small">
+      <div class="bg">
+
+            <img src="./assets/hero_bg" alt="">
+        </div>
+    <div class="headings">
+        <h2>Wild Game Processing</h2>
+        
+    </div>
+    <div class="wrapper">
+        <div class="meat-holder">
+             <div class="meat">
+                <img src="./assets/grab bag.png" alt="">
+                
+                <div class="desc">
+<h3>Wild Boar</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+            <div class="meat">
+                <img src="./assets/grab bag.png" alt="">
+                
+                <div class="desc">
+<h3>Venison</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+            <div class="meat">
+                <img src="./assets/grab bag.png" alt="">
+                
+                <div class="desc">
+<h3>Elk</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+            <div class="meat">
+                <img src="./assets/grab bag.png" alt="">
+                
+                <div class="desc">
+<h3>Bear</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+           <div class="meat">
+                <img src="./assets/grab bag.png" alt="">
+                
+                <div class="desc">
+<h3>Antelope</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <h2 style="position:relative; margin:2rem auto;">“Retail Cuts and Custom sausages made”</h2>
+</section> -->
 </div>
 
 
@@ -822,13 +1144,13 @@
         <div class="wrapper">
 <div class="left-wrap">
 <div class="logo">
-                <a href="" ><img class="g-txt" src="./assets/galvan-text.png" alt=""></a>
+                <!-- <a href="" ><img class="g-txt" src="./assets/galvan-text.png" alt=""></a> -->
                 <a href="./index.html"><img src="./assets/logo-raw.JPG" alt=""></a>
             </div>
         <div class="socials">
 <a href=""><img src="./assets/icons/facebook.png" alt=""></a>
 <a href=""><img src="./assets/icons/twitter.png" alt=""></a>
-<a href=""><img src="./assets/icons/instagram.png"   alt=""></a>
+<a href="https://www.instagram.com/galvansmarket/?hl=en" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
         </div>
         </div>
           <div class="right-wrap">
@@ -836,7 +1158,7 @@
             <a href="./story.html">Our Story</a>
             <a href="./meats.html">Meat</a>
             <a href="./breadboard.html">Bread Board</a>
-            <a href="">Merch</a>
+            <a href="https://galvans-market.printify.me/" target="_blank">Merch</a>
             <a href="./index.html#contact">Contact Us</a>
             </div>
 
@@ -846,9 +1168,9 @@
                 <li><i class="fa-solid fa-phone"></i><span> +1234567890</span></li>
                 <li><i class="fa-solid fa-at"></i> <span>example@email.com</span></li>
                 <li><i class="fa-solid fa-location-dot"></i> <span>1275 Macarthur Boulevard, <br>San Leandro, California</span></li>
-                <li><i class="fa-solid fa-clock"> </i> <span>MON-FRI : 10AM-6PM <br>
-                SAT: 11AM-6PM <br>
-                SUN: 11AM-3PM</span>
+                <li><i class="fa-solid fa-clock"> </i> <span>TUE-SAT : 10AM-6PM <br>
+                SUN/MON: Closed <br>
+                </span>
                 </li>
             </ul>
         </div>
@@ -868,6 +1190,39 @@
       
       
     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+     <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+      spaceBetween: 10,
+      loop: true,
+       pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+    
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+  
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+  
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
+    });
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
